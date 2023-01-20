@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0; }
 
+h1::selection, h2::selection, p::selection, a::selection {
+  background-color: #C780FA; }
+
 header {
   background: radial-gradient(circle, #1f1f1f 10%, transparent 11%);
   background-size: 1em 1em;
@@ -10,7 +13,7 @@ header {
   header div p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 10;
-    color: #ffff; }
+    color: #4A9E76; }
   header div h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
@@ -28,12 +31,26 @@ main {
   main div {
     padding: 10vh 10vh 10vh 3vh;
     color: #ffff; }
+    main div a {
+      color: #4A9E76;
+      text-decoration: none; }
+      main div a:hover {
+        color: #FDC87B;
+        transition: 1s; }
     main div p {
       font-family: 'Montserrat', sans-serif; }
     main div h2 {
       font-family: 'PT Mono', monospace;
       padding: 2vh 0 2vh 0;
-      font-size: xx-large; }
+      font-size: xx-large;
+      color: #FDC87B; }
+      main div h2:hover {
+        transition: 1s;
+        color: #4A9E76; }
+    main div .technologies {
+      font-family: 'PT Mono', monospace;
+      color: #ffff;
+      padding-top: 10vh; }
   main img {
     padding: 10vh 3vh 5vh 10vh; }
 
@@ -64,8 +81,6 @@ footer {
       footer p a:hover {
         color: #1f1f1f;
         transition: 1s; }
-      footer p a::selection {
-        background-color: #DBC9B8; }
 
 @media screen and (min-width: 770px) {
   header {

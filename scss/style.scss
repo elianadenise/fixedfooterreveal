@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0; }
 
+h1, h2, p, a{
+    &::selection{
+        background-color: #C780FA;
+    }
+}
 //HEADER
 header{
     background: radial-gradient(circle, #1f1f1f 10%, transparent 11%);
@@ -13,7 +18,7 @@ header{
         p{
             font-family:'Montserrat', sans-serif;
             font-weight: 10;
-            color: #ffff;
+            color: #4A9E76;
         }
         h1{
             font-family:'Montserrat', sans-serif;
@@ -33,13 +38,21 @@ main{
     background-color: #000000;
 
     //Especifico del fixed footer
-    z-index: 1;
+    z-index: 1;//mayor al z-index del footer
     position: relative;
     margin-bottom: 200px; //tamaño igual al height del footer
 
     div{
         padding: 10vh 10vh 10vh 3vh;
         color: #ffff;
+        a{
+            color:#4A9E76;
+            text-decoration: none;
+            &:hover{
+                color:#FDC87B;
+                transition: 1s;
+            }
+        }
         p{
             font-family: 'Montserrat', sans-serif;
         }
@@ -47,11 +60,21 @@ main{
             font-family: 'PT Mono', monospace;
             padding: 2vh 0 2vh 0;
             font-size:xx-large;
+            color: #FDC87B;
+
+            &:hover{
+                transition: 1s;
+                color:#4A9E76;
+            }
+        }
+        .technologies{
+            font-family:'PT Mono', monospace;
+            color: #ffff;
+            padding-top: 10vh;
         }
     }
     img{
         padding: 10vh 3vh 5vh 10vh;
-        
     }
 }
 
@@ -62,7 +85,7 @@ footer{
     height: 200px; //igual al margin-bottom del main
     position: fixed;
     bottom: 0px;
-    z-index: -1;
+    z-index: -1; //menor al z-index del main
 
     //Especifico del estilo
     background-color: #4A9E76;
@@ -88,9 +111,6 @@ footer{
                 color: #1f1f1f;
                 transition: 1s;
             }
-            &::selection{
-                background-color: #DBC9B8;
-                }
         }
     }
 }
