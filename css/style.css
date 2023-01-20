@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0; }
 
-h1::selection, h2::selection, p::selection, a::selection {
+h1::selection, h2::selection, p::selection, a::selection, img::selection {
   background-color: #C780FA; }
 
 header {
@@ -32,20 +32,21 @@ main {
     padding: 10vh 10vh 10vh 3vh;
     color: #ffff; }
     main div a {
-      color: #4A9E76;
       text-decoration: none; }
       main div a:hover {
-        color: #FDC87B;
         transition: 1s; }
     main div p {
       font-family: 'Montserrat', sans-serif; }
-    main div h2 {
+      main div p a {
+        color: #4A9E76; }
+        main div p a:hover {
+          color: #FDC87B; }
+    main div h2 a {
       font-family: 'PT Mono', monospace;
       padding: 2vh 0 2vh 0;
       font-size: xx-large;
       color: #FDC87B; }
-      main div h2:hover {
-        transition: 1s;
+      main div h2 a:hover {
         color: #4A9E76; }
     main div .technologies {
       font-family: 'PT Mono', monospace;

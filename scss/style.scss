@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0; }
 
-h1, h2, p, a{
+h1, h2, p, a, img{
     &::selection{
         background-color: #C780FA;
     }
@@ -45,27 +45,34 @@ main{
     div{
         padding: 10vh 10vh 10vh 3vh;
         color: #ffff;
+      
         a{
-            color:#4A9E76;
             text-decoration: none;
             &:hover{
-                color:#FDC87B;
                 transition: 1s;
             }
         }
+        
         p{
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Montserrat', sans-serif;  
+            a{
+            color:#4A9E76;
+            &:hover{
+                color:#FDC87B;  
+            }
+        }
         }
         h2{
-            font-family: 'PT Mono', monospace;
-            padding: 2vh 0 2vh 0;
-            font-size:xx-large;
-            color: #FDC87B;
-
-            &:hover{
-                transition: 1s;
-                color:#4A9E76;
+            a{
+                font-family: 'PT Mono', monospace;
+                padding: 2vh 0 2vh 0;
+                font-size:xx-large;
+                color: #FDC87B;
+                &:hover{
+                  color:#4A9E76;
+                }   
             }
+            
         }
         .technologies{
             font-family:'PT Mono', monospace;
